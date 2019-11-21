@@ -1,22 +1,133 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  height: 100vh;
+  width: 100%;
+  background: #9CECFB;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0052D4), color-stop(#65C7F7), to(#9CECFB));
+  background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  padding: 0;
+  margin: 0;
+}
+
+.Ui {
+  max-width: 20rem;
+  background-color: #e94337;
+  margin: 5em auto;
+  -webkit-box-shadow: -10px -10px 10px black;
+          box-shadow: -10px -10px 10px black;
+}
+
+.Header {
+  color: #e9cece;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  padding: 0.1em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Header h1 {
+  margin: 0.2em;
+}
+
+.Header p {
+  font-size: 0.7em;
+  font-weight: 200;
+  margin-bottom: 0.5em;
+}
+
+.Header hr {
+  border-color: #ee6e65;
+  margin-bottom: 1em;
+}
+
+.List {
   color: white;
+  background-color: #ee6e65;
+  width: 100%;
+  padding: 0.8em 2em;
+  margin-bottom: 0.8em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 10% 10%;
+      grid-template-columns: 80% 10% 10%;
 }
 
-.App-link {
-  color: #09d3ac;
+.List p {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
+
+.List span {
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+
+#form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+
+#form input {
+  height: 2.2em;
+}
+
+#form input:focus {
+  border: 0;
+}
+
+#form ::-webkit-input-placeholder {
+  padding: 0 1em;
+  font-family: "Courgette", cursive;
+}
+
+#form :-ms-input-placeholder {
+  padding: 0 1em;
+  font-family: "Courgette", cursive;
+}
+
+#form ::-ms-input-placeholder {
+  padding: 0 1em;
+  font-family: "Courgette", cursive;
+}
+
+#form ::placeholder {
+  padding: 0 1em;
+  font-family: "Courgette", cursive;
+}
+
+#form button {
+  cursor: pointer;
+  color: #e9cece;
+  height: 2.2em;
+  background-color: #a81c12;
+  border: 0.5px #ee6e65 solid;
+  padding: 0 0.5em;
+  margin-left: 0.2em;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#form button:hover {
+  background-color: #ee6e65;
+  border: 0.5px #a81c12 solid;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #e9cece !important;
+}
+/*# sourceMappingURL=App.css.map */
